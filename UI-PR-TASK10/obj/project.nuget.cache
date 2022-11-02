@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "+LuDc6m9oIiiO6mdVkixjCf7K6WN0V9bTx0qOMG7+FPj5g6OERmxC0DiC3p3R1D28bC7REtl8rfQNAobpyoC7w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Пользователь\\source\\repos\\UI-PR-TASK10\\UI-PR-TASK10\\UI-PR-TASK10.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Пользователь\\.nuget\\packages\\materialdesigncolors\\2.0.9\\materialdesigncolors.2.0.9.nupkg.sha512",
+    "C:\\Users\\Пользователь\\.nuget\\packages\\materialdesignthemes\\4.6.1\\materialdesignthemes.4.6.1.nupkg.sha512"
+  ],
+  "logs": []
+}

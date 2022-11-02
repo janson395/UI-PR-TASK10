@@ -1,0 +1,197 @@
+﻿<Window x:Class="UI_PR_TASK10.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI_PR_TASK10"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Практическая работа №10" 
+        MinHeight="450"
+        MinWidth="800"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1.5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="1,0" EndPoint="0,1">
+                <GradientStop Color="#F76463" Offset="1"/>
+                <GradientStop Color="#C3284D" Offset="0.25"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <StackPanel Background="#C3284D">
+            <Grid Height="150" Background="Gray">
+                <Image Source="Images/lvi_5.jpg"
+                       Stretch="UniformToFill"/>
+            </Grid>
+            <ListView>
+                <ListViewItem>
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon
+                            Kind="DesktopTowerMonitor"
+                            VerticalAlignment="Center"
+                            Margin="5"
+                            Foreground="#F76463"/>
+                        <TextBlock Text="Система"
+                                   VerticalAlignment="Center"
+                                   Margin="5"
+                                   Foreground="#F76463"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem>
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon
+                            Kind="Sitemap"
+                            VerticalAlignment="Center"
+                            Margin="5"
+                            Foreground="#F76463"/>
+                        <TextBlock Text="Меню"
+                                   VerticalAlignment="Center"
+                                   Margin="5"
+                                   Foreground="#F76463"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem>
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon
+                            Kind="UserAdd"
+                            VerticalAlignment="Center"
+                            Margin="5"
+                            Foreground="#F76463"/>
+                        <TextBlock Text="Сотрудники"
+                                   VerticalAlignment="Center"
+                                   Margin="5"
+                                   Foreground="#F76463"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem>
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon
+                            Kind="OrderBoolAscending"
+                            VerticalAlignment="Center"
+                            Margin="5"
+                            Foreground="#F76463"/>
+                        <TextBlock Text="Заказы"
+                                   VerticalAlignment="Center"
+                                   Margin="5"
+                                   Foreground="#F76463"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem>
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon
+                            Kind="Car"
+                            VerticalAlignment="Center"
+                            Margin="5"
+                            Foreground="#F76463"/>
+                        <TextBlock Text="Доставка"
+                                   VerticalAlignment="Center"
+                                   Margin="5"
+                                   Foreground="#F76463"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem>
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon
+                            Kind="ReceiptOutline"
+                            VerticalAlignment="Center"
+                            Margin="5"
+                            Foreground="#F76463"/>
+                        <TextBlock Text="Чеки"
+                                   VerticalAlignment="Center"
+                                   Margin="5"
+                                   Foreground="#F76463"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem>
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon
+                            Kind="Shield"
+                            VerticalAlignment="Center"
+                            Margin="5"
+                            Foreground="#F76463"/>
+                        <TextBlock Text="Закрыть смену"
+                                   VerticalAlignment="Center"
+                                   Margin="5"
+                                   Foreground="#F76463"/>
+                    </StackPanel>
+                </ListViewItem>
+            </ListView>
+        </StackPanel>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.7*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Margin="10">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Foreground="#331016"
+                           Text="ЗАКАЗЧИК:"
+                           FontWeight="Bold"/>
+                    <TextBlock Text="Test T.M." Foreground="LightGray" Margin="5 0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Foreground="#331016" 
+                           Text="ОПЛАЧЕН : "
+                           FontWeight="Bold"/>
+
+                    <TextBlock Text="10.10.2069 10:24:47"
+                           Foreground="LightGray"
+                           Margin="5 0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Foreground="#331016" 
+                           Text="№ ЗАКАЗА: "
+                           FontWeight="Bold"/>
+
+                    <TextBlock Text="1"
+                           Foreground="LightGray"
+                           Margin="5 0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Foreground="#331016" 
+                           Text="АДРЕС ДОСТАВКИ: "
+                           FontWeight="Bold"/>
+
+                    <TextBlock Text="САМОВЫВОЗ"
+                           Foreground="LightGray"
+                           Margin="5 0"/>
+                </StackPanel>
+            </StackPanel>
+            <Border Grid.Row="1"
+                    BorderBrush="#FFCD42"
+                    BorderThickness="1"
+                    Margin="10"
+                    CornerRadius="5">
+                <ListView Margin="0 0 4 0"
+                          ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                    <ListViewItem>
+                        <Grid Width="400">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="3*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0"
+                                   Source="Images/lvi_1.jpg"
+                                   Margin="5"/>
+                            <StackPanel Grid.Column="1"
+                                        VerticalAlignment="Center"
+                                        Margin="5"></StackPanel>
+                        </Grid>
+                    </ListViewItem>
+                </ListView>
+            </Border>
+        </Grid>
+        
+    </Grid>
+</Window>
